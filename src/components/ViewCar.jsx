@@ -25,28 +25,14 @@ const ViewCar = () => {
 
     return (
         <div>
-            <CarNavi/>
 
-            <div className="container mt-4">
-
-                <h2 className="text-center mb-4">View EV Charging Bookings</h2>
-
-                <table className="table table-bordered table-striped table-hover">
                     <thead className="table-dark">
                         <tr>
                             <th>Booking ID</th>
                             <th>Owner Name</th>
                             <th>Email</th>
                             <th>Phone</th>
-                            <th>Vehicle Registration No.</th>
-                            <th>Vehicle Brand</th>
-                            <th>Vehicle Model</th>
-                            <th>Battery Capacity (kWh)</th>
-                            <th>Connector Type</th>
-                            <th>Charging Date</th>
-                            <th>Time Slot</th>
-                            <th>Estimated Units (kWh)</th>
-                            <th>Charging Bay Number</th>
+
                         </tr>
                     </thead>
 
@@ -69,6 +55,7 @@ const ViewCar = () => {
                             </tr>
                         ))}
                     </tbody>
+
                 </table>
 
             </div>

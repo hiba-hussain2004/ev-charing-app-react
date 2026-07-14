@@ -3,29 +3,45 @@ import { Link } from 'react-router-dom'
 
 const CarNavi = () => {
   return (
-    <div>
 
-    <nav class="navbar navbar-expand-lg n1">
-            <div class="container-fluid">
-                
-                <a class="navbar-brand" href="#"> NSS Volunteer Management System </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    
-                    <Link class="nav-link active" aria-current="page" to="/">ADD VOLUNDEER </Link>
-                    <Link class="nav-link" to="/view">VIEW VOLUNDEER</Link>
-                    
-                    
-                </div>
-                </div>
-            </div>
-        </nav>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="container">
 
+        <Link className="navbar-brand" to="/">
+          EV Charging Booking
+        </Link>
 
-    </div>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/">
+                Add Booking
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/view">
+                View Bookings
+              </Link>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+  
   )
 }
 
