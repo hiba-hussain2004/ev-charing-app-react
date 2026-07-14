@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 const CarNavi = () => {
   return (
+
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
 
@@ -39,6 +40,8 @@ const CarNavi = () => {
 
       </div>
     </nav>
+
+  
   )
 }
 
