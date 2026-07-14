@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
+import CarNavi from './CarNavi';
 
 
 const Addcar = () => {
@@ -41,7 +42,7 @@ const Addcar = () => {
 
   return (
     <div>
-      
+      <CarNavi/>
 
       <div className="container mt-4">
         <div className="card shadow p-4">
